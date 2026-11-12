@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { cleanText, parseAreaSqft } from "@/lib/parse";
 import { absoluteUrl, parseWhen } from "@/lib/sync/normalize";
 import type { Adapter } from "@/lib/sync/types";
@@ -13,6 +14,12 @@ import type { Adapter } from "@/lib/sync/types";
 
 const ENDPOINT = "https://baanknet.com/api/v1/auction/detail/auction-listing";
 const SITE = "https://baanknet.com";
+
+/** Their detail pages only open with the page's own SHA-1 appended (/property-detail/{id}/{sha1 of that path}). */
+function detailUrl(propertyDetailId: number): string {
+  const path = `/property-detail/${propertyDetailId}`;
+  return `${SITE}${path}/${createHash("sha1").update(path).digest("hex")}`;
+}
 
 type Media = { url?: string; filetype?: number; ismainimage?: string | number };
 type Src = Record<string, unknown> & { propertyMedia?: Media[] };
@@ -38,6 +45,8 @@ function mainImage(media: Media[] | undefined): string | null {
 
 export function fromBaanknet(src: Src): Record<string, unknown> | null {
   const id = src.auctionId;
+  // their own site opens a card at /property-detail/{propertyDetailId}/{token} (not the auction id)
+  const pid = Number(src.propertyDetailId);
   if (id == null) return null;
   const heading = cleanText(src.propertyHeading, 300);
   const bank = cleanText(src.propertyBankName, 120);
@@ -51,7 +60,7 @@ export function fromBaanknet(src: Src): Record<string, unknown> | null {
   ].filter(Boolean);
   return {
     externalId: String(id),
-    url: `${SITE}/auction-detail/${id}`,
+    url: Number.isInteger(pid) && pid > 0 ? detailUrl(pid) : `${SITE}/property-listing`,
     title: heading,
     type: mapType(src.propertyType, src.propertySubType, heading),
     state: cleanText(src.stateName, 80),

@@ -122,7 +122,7 @@ await t("baanknet: its own JSON becomes valid listings", async () => {
   for (const o of out) {
     const p = rawListing.safeParse(o);
     assert.ok(p.success, JSON.stringify(o));
-    assert.match(p.data.url, /^https:\/\/baanknet\.com\/auction-detail\/\d+$/);
+    assert.match(p.data.url, /^https:\/\/baanknet\.com\/property-detail\/\d+\/[0-9a-f]{40}$/);
     assert.ok(p.data.price && p.data.price > 0);
     assert.ok(p.data.auctionAt && p.data.auctionAt > 1e12);
     assert.ok(p.data.bank);
