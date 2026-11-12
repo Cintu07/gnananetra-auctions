@@ -1,0 +1,38 @@
+# deps / build
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# env
+.env
+.env.local
+.env.*.local
+
+# the WordPress export holds customer data; local database files too
+data/wp-export/
+.local-db/
+*.sqlite
+*.sqlite-*
+*.sql.gz
+backup*.sql
+
+# uploads made through the admin in local mode
+public/uploads/
+
+# misc
+.DS_Store
+*.log
+__pycache__/
+tmp/
+.vercel
+
+# cloudflare
+.open-next/
+.wrangler/
+.dev.vars
+
+# deploy credentials (never commit)
+.cloudflare.env

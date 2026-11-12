@@ -1,0 +1,50 @@
+{
+  "name": "gnananetra-auctions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Gnananetra Auctions: land and shop auction listings gathered from other sites, kept fresh automatically, linking back to the original.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "db": "wrangler d1 migrations apply gnananetra-auctions --local",
+    "db:reset": "node scripts/db-reset.mjs && npm run db",
+    "db:generate": "drizzle-kit generate",
+    "sync": "node --env-file-if-exists=.env.local scripts/sync.mjs",
+    "test": "tsx scripts/test-sync.ts",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf:typegen": "wrangler types --env-interface CloudflareEnv --include-runtime=false cloudflare-env.d.ts",
+    "check": "npm run typecheck && npm run test && npm run build",
+    "audit:mobile": "node --env-file-if-exists=.env.local scripts/mobile-audit.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.45.4",
+    "jose": "^6.2.12",
+    "lucide-react": "^1.59.0",
+    "next": "^16.4.2",
+    "node-html-parser": "^7.0.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1",
+    "tailwind-merge": "^3.7.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.12",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "drizzle-kit": "^0.31.11",
+    "puppeteer-core": "^25.17.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.151.1"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}
