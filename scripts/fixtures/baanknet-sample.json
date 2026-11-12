@@ -1,0 +1,319 @@
+{
+ "data": {
+  "data": [
+   {
+    "_source": {
+     "auctionId": 387553,
+     "auctionFrom": "2026-11-30T05:30:00.000Z",
+     "auctionTo": "2026-11-30T08:30:00.000Z",
+     "auctionExtendedTo": "2026-11-30T08:30:00.000Z",
+     "emd": "655600.00000",
+     "reservePrice": 6556000,
+     "cityName": "Vadodara",
+     "stateName": "Gujarat",
+     "districtName": "Vadodara",
+     "locality": null,
+     "address": "All those pieces and parcels of Immovable Property situated at Old Baroda Battery Compound, Yamuna Mill Road, Pratap Nagar, Vadodara at R.S. No. 161, CS No. 2195/3, adm. Area 92.25 sq. mtrs. on Dabhoi",
+     "propertyPossessionType": "Physical",
+     "propertySubType": "Industrial Shed",
+     "propertyType": "Industrial",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Bank of Maharashtra",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/11/12/302984/686201.jpg",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/11/12/302984/686189.mp4",
+       "filetype": 2,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": "92.25",
+     "builtupAreaSqft": null,
+     "propertyHeading": "92.25 square meter Industrial Shed for sale in Vadodara"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 387542,
+     "auctionFrom": "2026-12-09T05:30:00.000Z",
+     "auctionTo": "2026-12-09T11:30:00.000Z",
+     "auctionExtendedTo": "2026-12-09T11:30:00.000Z",
+     "emd": "287400.00000",
+     "reservePrice": 2874000,
+     "cityName": "Solapur",
+     "stateName": "Maharashtra",
+     "districtName": "Solapur",
+     "locality": "Solapur",
+     "address": "Flat No. 701, 7th Floor, Ambaji Empire, F.P. No-35, Muncipal House No-849, New Paccha Peth, Ashok Chowk, Solapur-413 005",
+     "propertyPossessionType": "Symbolic",
+     "propertySubType": "Flat",
+     "propertyType": "Residential",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Bank of India",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/05/22/285395/583821.JPG",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/05/22/285395/583822.JPG",
+       "filetype": 1,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": "37.00",
+     "builtupAreaSqft": "56.00",
+     "propertyHeading": "2 BHK Flat for sale in Solapur Solapur"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 387504,
+     "auctionFrom": "2026-11-26T06:30:00.000Z",
+     "auctionTo": "2026-11-26T10:30:00.000Z",
+     "auctionExtendedTo": "2026-11-26T10:30:00.000Z",
+     "emd": "189000.00000",
+     "reservePrice": 1890000,
+     "cityName": "Kanpur",
+     "stateName": "Uttar Pradesh",
+     "districtName": "Kanpur Nagar",
+     "locality": null,
+     "address": "RATMP113/E-1/192 EWS Scheme Mirzapur (Ratanpur extension part-1) , Kanpur nagar. 208017",
+     "propertyPossessionType": "Symbolic",
+     "propertySubType": "Individual House",
+     "propertyType": "Residential",
+     "typeOfAction": "Others",
+     "propertyBankName": "Punjab National Bank",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2025/08/27/253840/423014.png",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/09/10/253840/648239.jpg",
+       "filetype": 1,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": "24.00",
+     "builtupAreaSqft": null,
+     "propertyHeading": "24 square meter Individual House for sale in Kanpur"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 386945,
+     "auctionFrom": "2026-11-30T06:00:00.000Z",
+     "auctionTo": "2026-11-30T08:00:00.000Z",
+     "auctionExtendedTo": "2026-11-30T08:00:00.000Z",
+     "emd": "560000.00000",
+     "reservePrice": 5600000,
+     "cityName": "Shorapur",
+     "stateName": "Karnataka",
+     "districtName": "Yadgiri",
+     "locality": "VILLAGE KHANAPUR S H",
+     "address": "All that Part and Parcel of Commercial Land and Building bearing Plot No. 4, Sy No.104/1 and 104/2, Measuring 7500 Sq ft, Situated at Khanapur S H Village, APMC, Shorapur town, Shorapur Taluk, Yadagir",
+     "propertyPossessionType": "Symbolic",
+     "propertySubType": "Shops",
+     "propertyType": "Commercial",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Canara Bank",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/12/31/279290/557040.jpg",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/12/31/279290/557038.jpg",
+       "filetype": 1,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": "7500.00",
+     "builtupAreaSqft": null,
+     "propertyHeading": "Shops for sale in VILLAGE KHANAPUR S H Shorapur"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 387026,
+     "auctionFrom": "2026-11-30T06:00:00.000Z",
+     "auctionTo": "2026-11-30T08:00:00.000Z",
+     "auctionExtendedTo": "2026-11-30T08:00:00.000Z",
+     "emd": "730000.00000",
+     "reservePrice": 7300000,
+     "cityName": "Basavana Bagevadi",
+     "stateName": "Karnataka",
+     "districtName": "Vijayapura",
+     "locality": "Village: Talewad, Taluk: Basavana Bagewadi (Near Tq-Kolhar) Dist. Vijayapura-586122",
+     "address": "land Situated at Sy. No. 2/2, Village: Talewad, Taluk: Basavana Bagewadi (Near Tq-Kolhar) Dist. Vijayapura, Karnataka Measur-ing 01A-00G, Including the house bearing VPC No. 904 admeasuring 3077 sq. f",
+     "propertyPossessionType": "Physical",
+     "propertySubType": "Others",
+     "propertyType": "Other",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Canara Bank",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2025/10/27/260927/470535.jpg",
+       "filetype": 1,
+       "ismainimage": "1"
+      }
+     ],
+     "carpetAreaSqft": null,
+     "builtupAreaSqft": null,
+     "propertyHeading": "Rural House for sale in Village: Talewad, Taluk: Basavana Bagewadi (Near Tq-Kolhar) Dist. Vijayapura-586122 Basavana Bagevadi"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 387478,
+     "auctionFrom": "2026-11-30T06:00:00.000Z",
+     "auctionTo": "2026-11-30T08:00:00.000Z",
+     "auctionExtendedTo": "2026-11-30T08:00:00.000Z",
+     "emd": "125000.00000",
+     "reservePrice": 1250000,
+     "cityName": "Hukeri",
+     "stateName": "Karnataka",
+     "districtName": "Belagavi",
+     "locality": "at Hattargi village, Hukkeri taluk, Belgavi district -591243",
+     "address": "commercial plot bearing VPC No. 312 with corresponding RDPR No. 150400604700101255 to the extent of 128.52 sq mtrs, situated at Hattargi village, Hukeri taluk, Belgavi district and within the limit of",
+     "propertyPossessionType": "Symbolic",
+     "propertySubType": "Plot",
+     "propertyType": "Commercial",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Canara Bank",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2025/11/26/265135/493417.jpg",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2025/11/26/265135/493419.jpg",
+       "filetype": 1,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": "1383.00",
+     "builtupAreaSqft": null,
+     "propertyHeading": "1383 square feet Plot for sale in at Hattargi village, Hukkeri taluk, Belgavi district -591243 Hukeri"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 387465,
+     "auctionFrom": "2026-11-26T05:30:00.000Z",
+     "auctionTo": "2026-11-26T06:30:00.000Z",
+     "auctionExtendedTo": "2026-11-26T06:30:00.000Z",
+     "emd": "71300.00000",
+     "reservePrice": 713000,
+     "cityName": "Lunglei",
+     "stateName": "Mizoram",
+     "districtName": "Lunglei",
+     "locality": "LUNGLEI",
+     "address": "All that part and parcel of land measuring 1515.00 Sq mt, standing in the name of Vanlalzami Sailo Bearing Land Settlement Certificate (LSC) No. LLI-34 of 2013 located at Serkawn VC Area, Lunglei, Miz",
+     "propertyPossessionType": "Symbolic",
+     "propertySubType": "Plot",
+     "propertyType": "Residential",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Canara Bank",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/08/03/293261/621588.jpg",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/08/29/293261/639119.jpg",
+       "filetype": 1,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": "1515.00",
+     "builtupAreaSqft": null,
+     "propertyHeading": "1515 square meter Plot for sale in LUNGLEI Lunglei"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 387480,
+     "auctionFrom": "2026-11-27T06:23:00.000Z",
+     "auctionTo": "2026-11-27T06:30:00.000Z",
+     "auctionExtendedTo": "2026-11-27T06:30:00.000Z",
+     "emd": "8280000.00000",
+     "reservePrice": 82800000,
+     "cityName": "Sepon",
+     "stateName": "Assam",
+     "districtName": "Charaideo",
+     "locality": null,
+     "address": "1.\tAll that part and parcel of a plot of land measuring, 243 Bigha 03 Katha 18 Lessa covered by PP no- 1, Dag no- 1027 under Tiyak Gaon, Abhayapur Mouza, Revenue Circle Sonari, Dist - Charaideo, Assam",
+     "propertyPossessionType": "Symbolic",
+     "propertySubType": "Agriculture Land",
+     "propertyType": "Agriculture",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Canara Bank",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/03/10/279705/558863.jpg",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/03/10/279705/558857.jpg",
+       "filetype": 1,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": "1.00",
+     "builtupAreaSqft": null,
+     "propertyHeading": "1 square feet Agriculture Land for sale in Sepon"
+    }
+   },
+   {
+    "_source": {
+     "auctionId": 386801,
+     "auctionFrom": "2026-11-26T06:30:00.000Z",
+     "auctionTo": "2026-11-26T11:30:00.000Z",
+     "auctionExtendedTo": "2026-11-26T11:30:00.000Z",
+     "emd": "1541200.00000",
+     "reservePrice": 15412000,
+     "cityName": "Suryapet",
+     "stateName": "Telangana",
+     "districtName": "Suryapet",
+     "locality": "SURYAPET",
+     "address": "All that part and parcel of Rice mill land & building   along with machinery admeasuring 3.23(1/2) guntas located at Sy no 829, Mothkur Road, ThondaTirumalagiri, Suryapet Dist. Telangana belonging to ",
+     "propertyPossessionType": "Physical",
+     "propertySubType": "Shed with Plant and Machinery",
+     "propertyType": "Industrial",
+     "typeOfAction": "Under SARFAESI",
+     "propertyBankName": "Union Bank of India",
+     "propertyMedia": [
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/07/09/274588/605411.jpg",
+       "filetype": 1,
+       "ismainimage": "1"
+      },
+      {
+       "url": "https://cdn.baanknet.com/Production/Application-Documents/Generic-Instance/Property/Images/2026/07/09/274588/605412.jpg",
+       "filetype": 1,
+       "ismainimage": "0"
+      }
+     ],
+     "carpetAreaSqft": null,
+     "builtupAreaSqft": null,
+     "propertyHeading": "Shed with Plant and Machinery for sale in SURYAPET Suryapet"
+    }
+   }
+  ],
+  "total": 9,
+  "currentPage": 1,
+  "totalPages": 1
+ }
+}
