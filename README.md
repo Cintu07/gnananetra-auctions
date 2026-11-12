@@ -2,7 +2,7 @@
 
 Bank property auctions (houses, flats, plots, shops, commercial) gathered from other websites, kept fresh with no human involved, each card linking back to the original auction page. We do not run auctions: every bid happens on the source site.
 
-Next.js 16, Cloudflare Workers, D1 (SQLite via Drizzle), Tailwind 4. Same brand colours and logo as the Gnananetra shop. Not deployed yet. Everything on the site comes from the real sources; there is no sample data.
+Next.js 16, Cloudflare Workers, D1 (SQLite via Drizzle), Tailwind 4. Same brand colours and logo as the Gnananetra shop. Live at https://auction.gnananetra.com (hidden from search engines until the client says go). Everything on the site comes from the real sources; there is no sample data.
 
 ## Before this goes public: get BAANKNET's written consent
 
