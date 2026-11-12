@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Gnananetra Auctions. NOT deployed yet. The Cloudflare account is shared with other live apps
+  // (gnananetra, crm-production, gnananetra-digital-estamp, gncs-tracker-api): keep this name unique.
+  "name": "gnananetra-auctions",
+  "main": "worker.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  "services": [{ "binding": "WORKER_SELF_REFERENCE", "service": "gnananetra-auctions" }],
+  "observability": { "enabled": true },
+
+  // the sync engine: every 3 hours the Worker's scheduled() handler (worker.ts) refreshes every source
+  "triggers": { "crons": ["0 */3 * * *"] },
+
+  "d1_databases": [
+    { "binding": "DB", "database_name": "gnananetra-auctions", "database_id": "REPLACE_WITH_D1_ID", "migrations_dir": "drizzle" },
+    { "binding": "NEXT_TAG_CACHE_D1", "database_name": "gnananetra-auctions-tags", "database_id": "REPLACE_WITH_TAGS_D1_ID" }
+  ],
+  "r2_buckets": [{ "binding": "NEXT_INC_CACHE_R2_BUCKET", "bucket_name": "gnananetra-auctions-cache" }],
+
+  "vars": { "NEXT_PUBLIC_SITE_URL": "http://localhost:3000" }
+}
