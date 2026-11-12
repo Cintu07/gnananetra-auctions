@@ -1,0 +1,181 @@
+@import "tailwindcss" source(none);
+@source "../app";
+@source "../components";
+@source "../lib";
+
+/* Gnananetra Auctions: the same colours as the Gnananetra shop (saffron #F95E06 from the wordmark,
+   gold #D0A031 from the yantra). Buttons use the deeper #C9420C so white text keeps AA contrast. */
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-ink: #0b1220;
+  --color-ink-2: #1d2939;
+  --color-body: #344054;
+  --color-muted: #5d6676;
+  --color-faint: #98a2b3;
+  --color-line: #e6e8ec;
+  --color-line-2: #d0d5dd;
+  --color-canvas: #f4f5f7;
+  --color-surface: #ffffff;
+
+  --color-brand: #f95e06;
+  --color-brand-50: #fff6f0;
+  --color-brand-100: #ffe9d9;
+  --color-brand-200: #ffd0ad;
+  --color-brand-600: #e3550a;
+  --color-brand-700: #c9420c;
+  --color-brand-800: #9f340b;
+  --color-gold: #d0a031;
+  --color-gold-50: #fbf6e7;
+  --color-night: #0b1324;
+  --color-night-2: #131d33;
+
+  --color-success: #0e7c4f;
+  --color-success-50: #ebf8f1;
+  --color-danger: #c8291d;
+  --color-danger-50: #fdf0ee;
+  --color-warn: #a65a0a;
+  --color-warn-50: #fff7e8;
+
+  --shadow-card: 0 1px 2px rgb(16 24 40 / 0.04), 0 1px 3px rgb(16 24 40 / 0.05);
+  --shadow-lift: 0 18px 40px -18px rgb(16 24 40 / 0.28);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-rise: rise 0.45s var(--ease-out-expo) both;
+  --animate-fade-in: fade-in 0.2s ease-out;
+  --animate-pulse-dot: pulse-dot 1.8s ease-in-out infinite;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.45; transform: scale(0.8); }
+  }
+  @keyframes reveal {
+    from { opacity: 0.72; transform: translateY(12px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+/* Scroll reveal with no JavaScript: browsers that support scroll-driven animations fade sections
+   in as they enter the screen; others just show them. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+}
+
+/* everything calm for people who asked their phone for less motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    animation: none !important;
+  }
+}
+
+@utility wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1280px;
+  padding-inline: 1rem;
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem;
+  }
+}
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@utility grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 90px;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-brand-100);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand-700);
+    outline-offset: 2px;
+  }
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+@utility btn {
+  @apply min-h-11 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-[15px] leading-none font-semibold transition-[background-color,color,box-shadow,transform] duration-200 select-none active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50;
+}
+@utility btn-primary {
+  @apply btn bg-brand-700 text-white shadow-[0_1px_2px_rgb(16_24_40/0.12),inset_0_1px_0_rgb(255_255_255/0.15)] hover:bg-brand-800;
+}
+@utility btn-dark {
+  @apply btn bg-ink text-white hover:bg-ink-2;
+}
+@utility btn-outline {
+  @apply btn bg-surface text-ink ring-1 ring-line-2 ring-inset hover:bg-canvas;
+}
+@utility btn-ghost {
+  @apply btn text-ink hover:bg-ink/5;
+}
+@utility btn-sm {
+  @apply min-h-10 px-3.5 py-2 text-[13px];
+}
+@utility field {
+  @apply w-full rounded-xl border border-line-2 bg-surface px-3.5 py-3 text-[15px] text-ink outline-none transition-[border-color,box-shadow] placeholder:text-faint focus:border-brand-700 focus:ring-4 focus:ring-brand-100 disabled:bg-canvas;
+}
+@utility label {
+  @apply mb-1.5 block text-[13px] font-semibold text-ink-2;
+}
+@utility card {
+  @apply rounded-2xl bg-surface ring-1 ring-line;
+}
+@utility chip {
+  @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12px] leading-none font-semibold;
+}
+@utility eyebrow {
+  @apply text-[12px] font-bold tracking-[0.14em] text-brand-700 uppercase;
+}
+@utility section-title {
+  @apply text-[22px] leading-tight font-extrabold tracking-[-0.02em] text-ink sm:text-[28px];
+}
